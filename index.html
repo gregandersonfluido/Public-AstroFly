@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -125,44 +126,14 @@
     </style>
   </head>
   <body>
-    <header>
-      <div class="container">
-        <div class="logo">
-          <a href="index.html">
-            <img src="images/logo.png" alt="AstroFly Robotics Logo" />
-          </a>
-        </div>
-        <nav>
-          <ul>
-            <li><a href="index.html">Home</a></li>
-            <li class="dropdown">
-              <a href="products/index.html">Products</a>
-              <div class="dropdown-content">
-                <a href="products/astroguard-x1/index.html">AstroGuard X1</a>
-                <a href="products/astrocargo-d3/index.html">AstroCargo D3</a>
-                <a href="products/astroinspect-z2/index.html"
-                  >AstroInspect Z2</a
-                >
-                <a href="products/astrorescue-r1/index.html">AstroRescue R1</a>
-                <a href="products/astrosurvey-q1/index.html">AstroSurvey Q1</a>
-              </div>
-            </li>
-            <li><a href="about/index.html">About Us</a></li>
-            <li class="dropdown">
-              <a href="solutions/index.html">Solutions</a>
-              <div class="dropdown-content">
-                <a href="solutions/security/index.html">Security</a>
-                <a href="solutions/manufacturing/index.html">Manufacturing</a>
-              </div>
-            </li>
-            <li><a href="contact/index.html">Contact</a></li>
-          </ul>
-        </nav>
-        <div class="mobile-nav-toggle">
-          <span></span><span></span><span></span>
-        </div>
-      </div>
-    </header>
+    <div id="nav-placeholder"></div>
+    <script type="module">
+      fetch("_nav.html")
+        .then((response) => response.text())
+        .then((html) => {
+          document.getElementById("nav-placeholder").innerHTML = html;
+        });
+    </script>
     <main>
       <section class="hero" data-astro-cid-j7pv25f6>
         <video
@@ -195,14 +166,16 @@
               href="solutions/security"
               class="button button-primary"
               data-astro-cid-j7pv25f6
-              >Security Solutions</a
             >
+              Security Solutions
+            </a>
             <a
               href="solutions/manufacturing"
               class="button button-secondary"
               data-astro-cid-j7pv25f6
-              >Manufacturing Solutions</a
             >
+              Manufacturing Solutions
+            </a>
           </div>
         </div>
       </section>
@@ -237,8 +210,9 @@
                   href="products/astroguard-x1"
                   class="button button-secondary"
                   data-astro-cid-j7pv25f6
-                  >Learn More</a
                 >
+                  Learn More
+                </a>
               </div>
             </div>
             <!-- AstroCargo D3 -->
@@ -262,8 +236,9 @@
                   href="products/astrocargo-d3"
                   class="button button-secondary"
                   data-astro-cid-j7pv25f6
-                  >Learn More</a
                 >
+                  Learn More
+                </a>
               </div>
             </div>
             <!-- AstroInspect Z2 -->
@@ -286,8 +261,9 @@
                   href="products/astroinspect-z2"
                   class="button button-secondary"
                   data-astro-cid-j7pv25f6
-                  >Learn More</a
                 >
+                  Learn More
+                </a>
               </div>
             </div>
             <!-- AstroRescue R1 -->
@@ -295,8 +271,7 @@
               <div class="product-image" data-astro-cid-j7pv25f6>
                 <img
                   src="images/products/astrorescue-r1.jpg"
-                  alt="AstroRescue R1 Emergency
-Response Drone"
+                  alt="AstroRescue R1 Emergency Response Drone"
                   onerror="this.src='images/placeholder.jpg'"
                   data-astro-cid-j7pv25f6
                 />
@@ -311,8 +286,9 @@ Response Drone"
                   href="products/astrorescue-r1"
                   class="button button-secondary"
                   data-astro-cid-j7pv25f6
-                  >Learn More</a
                 >
+                  Learn More
+                </a>
               </div>
             </div>
             <!-- AstroSurvey Q1 -->
@@ -335,8 +311,9 @@ Response Drone"
                   href="products/astrosurvey-q1"
                   class="button button-secondary"
                   data-astro-cid-j7pv25f6
-                  >Learn More</a
                 >
+                  Learn More
+                </a>
               </div>
             </div>
           </div>
@@ -361,8 +338,7 @@ Response Drone"
                   data-astro-cid-j7pv25f6
                 >
                   <path
-                    d="M12 22s8-4
-8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"
+                    d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"
                     data-astro-cid-j7pv25f6
                   ></path>
                 </svg>
@@ -435,8 +411,7 @@ Response Drone"
                   data-astro-cid-j7pv25f6
                 >
                   <path
-                    d="M21 10c0 7-9 13-9
-13s-9-6-9-13a9 9 0 0 1 18 0z"
+                    d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"
                     data-astro-cid-j7pv25f6
                   ></path>
                   <circle
