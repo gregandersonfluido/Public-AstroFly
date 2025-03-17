@@ -178,49 +178,22 @@
     <header>
       <div class="container">
         <div class="logo">
-          <a href="/Public-AstroFly/">
+          <a href="/Public-AstroFly/index.html">
             <img
               src="/Public-AstroFly/images/logo.png"
-              alt="AstroFly Robotics Logo"
+              alt="AstroFly Robotics
+Logo"
             />
           </a>
         </div>
-        <nav>
-          <ul>
-            <li><a href="/Public-AstroFly/index.html">Home</a></li>
-            <li class="dropdown">
-              <a href="/Public-AstroFly/products">Products</a>
-              <div class="dropdown-content">
-                <a href="/Public-AstroFly/products/astroguard-x1"
-                  >AstroGuard X1</a
-                >
-                <a href="/Public-AstroFly/products/astrocargo-d3"
-                  >AstroCargo D3</a
-                >
-                <a href="/Public-AstroFly/products/astroinspect-z2"
-                  >AstroInspect Z2</a
-                >
-                <a href="/Public-AstroFly/products/astrorescue-r1"
-                  >AstroRescue R1</a
-                >
-                <a href="/Public-AstroFly/products/astrosurvey-q1"
-                  >AstroSurvey Q1</a
-                >
-              </div>
-            </li>
-            <li><a href="/Public-AstroFly/about">About Us</a></li>
-            <li class="dropdown">
-              <a href="/Public-AstroFly/solutions">Solutions</a>
-              <div class="dropdown-content">
-                <a href="/Public-AstroFly/solutions/security">Security</a>
-                <a href="/Public-AstroFly/solutions/manufacturing"
-                  >Manufacturing</a
-                >
-              </div>
-            </li>
-            <li><a href="/Public-AstroFly/contact">Contact</a></li>
-          </ul>
-        </nav>
+        <nav id="nav-placeholder"></nav>
+        <script type="module">
+          fetch("/Public-AstroFly/nav.html")
+            .then((response) => response.text())
+            .then((html) => {
+              document.getElementById("nav-placeholder").innerHTML = html;
+            });
+        </script>
         <div class="mobile-nav-toggle">
           <span></span> <span></span> <span></span>
         </div>
