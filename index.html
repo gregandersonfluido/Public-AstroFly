@@ -13,14 +13,30 @@
     <link rel="stylesheet" href="/Public-AstroFly/styles/global.css" />
   </head>
   <body>
-    <div id="nav-placeholder"></div>
-    <script type="module">
-      fetch("/Public-AstroFly/nav.html")
-        .then((response) => response.text())
-        .then((html) => {
-          document.getElementById("nav-placeholder").innerHTML = html;
-        });
-    </script>
+    <header>
+      <div class="container">
+        <div class="logo">
+          <a href="../../index.html">
+            <img
+              src="../../images/logo.png"
+              alt="AstroFly Robotics
+Logo"
+            />
+          </a>
+        </div>
+        <nav id="nav-placeholder"></nav>
+        <script type="module">
+          fetch("/Public-AstroFly/nav.html")
+            .then((response) => response.text())
+            .then((html) => {
+              document.getElementById("nav-placeholder").innerHTML = html;
+            });
+        </script>
+        <div class="mobile-nav-toggle">
+          <span></span> <span></span> <span></span>
+        </div>
+      </div>
+    </header>
     <main>
       <section class="hero" data-astro-cid-j7pv25f6>
         <video
