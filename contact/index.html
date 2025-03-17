@@ -8,9 +8,9 @@
       content="Intelligent Aerial Security &#38; Automation for the Future"
     />
     <base href="/Public-AstroFly/" />
-    <link rel="icon" type="image/png" href="./images/logo.png" />
+    <link rel="icon" type="image/png" href="/Public-AstroFly/images/logo.png" />
     <title>Contact Us | AstroFly Robotics</title>
-    <link rel="stylesheet" href="/styles/global.css" />
+    <link rel="stylesheet" href="/Public-AstroFly/styles/global.css" />
     <style>
       .contact-hero[data-astro-cid-uw5kdbxl] {
         background: var(--gradient-primary);
@@ -183,40 +183,49 @@
     <header>
       <div class="container">
         <div class="logo">
-          <a href="../index.html">
-            <img src="../images/logo.png" alt="AstroFly Robotics Logo" />
+          <a href="/Public-AstroFly/index.html">
+            <img
+              src="/Public-AstroFly/images/logo.png"
+              alt="AstroFly Robotics Logo"
+            />
           </a>
         </div>
         <nav>
           <ul>
-            <li><a href="../index.html">Home</a></li>
+            <li><a href="/Public-AstroFly/index.html">Home</a></li>
             <li class="dropdown">
-              <a href="../products/index.html">Products</a>
+              <a href="/Public-AstroFly/products/index.html">Products</a>
               <div class="dropdown-content">
-                <a href="../products/astroguard-x1/index.html">AstroGuard X1</a>
-                <a href="../products/astrocargo-d3/index.html">AstroCargo D3</a>
-                <a href="../products/astroinspect-z2/index.html"
+                <a href="/Public-AstroFly/products/astroguard-x1/index.html"
+                  >AstroGuard X1</a
+                >
+                <a href="/Public-AstroFly/products/astrocargo-d3/index.html"
+                  >AstroCargo D3</a
+                >
+                <a href="/Public-AstroFly/products/astroinspect-z2/index.html"
                   >AstroInspect Z2</a
                 >
-                <a href="../products/astrorescue-r1/index.html"
+                <a href="/Public-AstroFly/products/astrorescue-r1/index.html"
                   >AstroRescue R1</a
                 >
-                <a href="../products/astrosurvey-q1/index.html"
+                <a href="/Public-AstroFly/products/astrosurvey-q1/index.html"
                   >AstroSurvey Q1</a
                 >
               </div>
             </li>
-            <li><a href="../about/index.html">About Us</a></li>
+            <li><a href="/Public-AstroFly/about/index.html">About Us</a></li>
             <li class="dropdown">
-              <a href="../solutions/index.html">Solutions</a>
+              <a href="/Public-AstroFly/solutions/index.html">Solutions</a>
               <div class="dropdown-content">
-                <a href="../solutions/security/index.html">Security</a>
-                <a href="../solutions/manufacturing/index.html"
+                <a href="/Public-AstroFly/solutions/security/index.html"
+                  >Security</a
+                >
+                <a href="/Public-AstroFly/solutions/manufacturing/index.html"
                   >Manufacturing</a
                 >
               </div>
             </li>
-            <li><a href="../contact/index.html">Contact</a></li>
+            <li><a href="/Public-AstroFly/contact/index.html">Contact</a></li>
           </ul>
         </nav>
         <div class="mobile-nav-toggle">
@@ -579,17 +588,20 @@
       <div class="container">
         <div class="footer-grid">
           <div class="footer-logo">
-            <img src="/images/logo.png" alt="AstroFly Robotics Logo" />
+            <img
+              src="/Public-AstroFly/images/logo.png"
+              alt="AstroFly Robotics Logo"
+            />
             <p>"Intelligent Aerial Security & Automation for the Future"</p>
           </div>
           <div class="footer-links">
             <h3>Quick Links</h3>
             <ul>
-              <li><a href="/">Home</a></li>
-              <li><a href="/products">Products</a></li>
-              <li><a href="/about">About Us</a></li>
-              <li><a href="/solutions">Solutions</a></li>
-              <li><a href="/contact">Contact</a></li>
+              <li><a href="/Public-AstroFly/index.html">Home</a></li>
+              <li><a href="/Public-AstroFly/products">Products</a></li>
+              <li><a href="/Public-AstroFly/about">About Us</a></li>
+              <li><a href="/Public-AstroFly/solutions">Solutions</a></li>
+              <li><a href="/Public-AstroFly/contact">Contact</a></li>
             </ul>
           </div>
           <div class="footer-contact">
@@ -601,37 +613,9 @@
                 >support@astroflyrobotics.com</a
               >
             </p>
-            <p>
-              Support Portal:
-              <a href="https://www.astroflyrobotics.com/support" target="_blank"
-                >www.astroflyrobotics.com/support</a
-              >
-            </p>
           </div>
-        </div>
-        <div class="copyright">
-          <p>&copy; 2025 AstroFly Robotics. All rights reserved.</p>
         </div>
       </div>
     </footer>
-    <script type="module">
-      document
-        .querySelector(".mobile-nav-toggle")
-        ?.addEventListener("click", () => {
-          document.querySelector("nav")?.classList.toggle("active"),
-            document
-              .querySelector(".mobile-nav-toggle")
-              ?.classList.toggle("active");
-        });
-    </script>
   </body>
 </html>
-<script type="module">
-  document
-    .getElementById("contact-form")
-    ?.addEventListener("submit", function (t) {
-      t.preventDefault(),
-        alert("Thank you for your message! Our team will contact you shortly."),
-        this.reset();
-    });
-</script>
