@@ -361,6 +361,10 @@ nav a:hover::after {
   margin-bottom: var(--space-lg);
 }
 
+.white-text {
+  color: white;
+}
+
 .hero-buttons {
   display: flex;
   gap: var(--space-md);
